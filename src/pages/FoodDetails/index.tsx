@@ -149,6 +149,8 @@ const FoodDetails: React.FC = () => {
     await api.post('/orders', {
       food,
     });
+
+    navigation.navigate('Orders');
   }
 
   // Calculate the correct icon name
